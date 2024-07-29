@@ -539,7 +539,7 @@ main .recent-orders a {
     gap: 0.6rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
     .container {
         width: 95%;
         grid-template-columns: 7rem auto 23rem;
