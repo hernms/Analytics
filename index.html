@@ -3,14 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summer</title>
-    <link rel="stylesheet" href="/styles/modern-normalize.css">
-    <link rel="stylesheet" href="/styles/template.css">
-    <link rel="stylesheet" href="/styles/styles.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <link rel="stylesheet" href="styles.css?v=1.1">
+    <title>Dashboard</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <button class="btn">Hello World</button>
-    <script src="/script/script.js"></script>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="https://miamioh.edu/miami-brand/_files/images/system/logo-usage/minimum-size/beveled-m-min-size.png">
+                    <h2>Summer<span class="danger">2024</span></h2>
+                </div>
+
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+
+            </div>
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Users</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+                    <h3>History</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Tickets</h3>
+                    <span class="message-count">27</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        inventory
+                    </span>
+                    <h3>Sale List</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                    </span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        add
+                    </span>
+                    <h3>New Login</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Analytics</h1>
+
+            <!-- Analysis Section -->
+            <div class="analyze">
+                <div class="sales">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Total Sales</h3>
+                            <h1>$65,024</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+81%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="visits">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Site Visits</h3>
+                            <h1>24,981</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>-48%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="searches">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Searches</h3>
+                            <h1>14,147</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+21%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Analysis -->
+
+            <!-- New Users Section -->
+            <div class="new-users">
+                <h2>New Users</h2>
+                <div class="user-list">
+                    <div class="user">
+                        <img src="https://i.pinimg.com/564x/b9/f7/e2/b9f7e252ea661cfda32ee3812c5e5ef7.jpg">
+                        <h2>Ice</h2>
+                        <P>54 Min Ago</P>
+                    </div>
+
+                    <div class="user">
+                        <img src="https://i.pinimg.com/564x/50/45/20/504520a398dbabe1f51ffd630cc6e816.jpg">
+                        <h2>Panda</h2>
+                        <P>3 Hours Ago</P>
+                    </div>
+
+                    <div class="user">
+                        <img src="https://i.pinimg.com/564x/83/65/35/8365356182ab631e68360031672f0a0f.jpg">
+                        <h2>Grizzly</h2>
+                        <P>6 Hours Ago</P>
+                    </div>
+
+                    <div class="user">
+                        <img src="https://media.istockphoto.com/id/688550958/vector/black-plus-sign-positive-symbol.jpg?s=612x612&w=0&k=20&c=0tymWBTSEqsnYYXWeWmJPxMotTGUwaGMGs6BMJvr7X4=">
+                        <h2>More</h2>
+                        <P>New User</P>
+                    </div>
+                </div>
+            </div>
+            <!-- End of New Users -->
+
+            <!-- Recent Orders Section -->
+            <div class="recent-orders">
+                <h2>Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course Name</th>
+                            <th>Course Number</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+            <!-- End of Recent Orders -->
+
+        </main>
+        <!-- End of Main -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+
+            <!-- Nav -->
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Marty</b></p>
+                        <small class="text_muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="https://ih1.redbubble.net/image.4515359424.1220/st,small,507x507-pad,600x600,f8f8f8.jpg">
+                    </div>
+                </div>
+            </div>
+            <!-- End of Nav -->
+
+            <div class="user-profile">
+                <div class="logo">
+                    <img src="https://miamioh.edu/miami-brand/_files/images/system/logo-usage/minimum-size/beveled-m-min-size.png">
+                    <h2>Martin Hern</h2>
+                    <p>Fullstack Web Developer</p>
+                </div>
+            </div>
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Reminders</h2>
+                    <span class="material-icons-sharp">
+                        notifications_none
+                    </span>
+                </div>
+
+                <div class="notification">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            volume_up
+                        </span>
+                    </div>
+
+                    <div class="content">
+                        <div class="info">
+                            <h3>Workshop</h3>
+                            <small class="text_muted">
+                                08:00 AM - 12:00 PM
+                            </small>
+                        </div>
+
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification deactive">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            edit
+                        </span>
+                    </div>
+
+                    <div class="content">
+                        <div class="info">
+                            <h3>Workshop</h3>
+                            <small class="text_muted">
+                                08:00 AM - 12:00 PM
+                            </small>
+                        </div>
+
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification add-reminder">
+                    <div>
+                        <span class="material-icons-sharp">
+                            add
+                        </span>
+                        <h3>Add Reminder</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- End of Right Section -->
+        
+    </div>
+
+    <script src="orders.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
